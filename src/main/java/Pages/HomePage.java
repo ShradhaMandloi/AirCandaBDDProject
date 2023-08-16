@@ -84,7 +84,8 @@ public class HomePage {
 	}
 	public void clickOnSearchFlightbutton() {
 		
-		 JavascriptExecutor js=(JavascriptExecutor)driver;
+		 JavascriptExecutor js=(JavascriptExecutor)driver;  //helpful when dealing with operations that might take time to complete
+		 													//allows you to retrieve information from the web page
 		 js.executeScript("arguments[0].click();", searchFlight);
 		 
 		//searchFlight.click();
